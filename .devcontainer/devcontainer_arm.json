@@ -1,6 +1,6 @@
 {
-  "name": "C++ Development Container (Rocky 8 - Intel)",
-  "image": "rockylinux:8", 
+  "name": "C++ Development Container (Rocky 8 - ARM)",
+  "image": "cpp-builder-rocky8-arm",
   "dockerFile": "../Dockerfile",
   "context": ".",
   "postStartCommand": "/workspace/container-content/stageEnv.sh",
