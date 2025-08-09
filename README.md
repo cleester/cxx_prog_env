@@ -10,8 +10,7 @@ To run this environment, you need to have three things installed locally on your
 
 VSCode can be downloaded from https://code.visualstudio.com/download. If you do not have git installed, do the following:
 * Mac
-  * Download and install HomeBrew for the Mac: https://github.com/Homebrew/brew/releases/download/4.6.0/Homebrew-4.6.0.pkg
-  * In a terminal, type the following: "brew install git"
+  * Open up a terminal and enter the "git" command. If you do not have "git", You will be prompted to install the XCode command line tools (CLT). Go through the install process. When it is finished the "git" command should be available.
 
 To get started, pull down the repository for creating the development environment:
 
