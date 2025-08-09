@@ -8,18 +8,29 @@ To run this environment, you need to have three things installed locally on your
 * Docker
 * Git
 
-VSCode can be downloaded from https://code.visualstudio.com/download. IF you do not have git installed, (add host-specific options here).
+VSCode can be downloaded from https://code.visualstudio.com/download. If you do not have git installed, do the following:
+* Mac
+  * Download and install HomeBrew for the Mac: https://github.com/Homebrew/brew/releases/download/4.6.0/Homebrew-4.6.0.pkg
+  * In a terminal, type the following: "brew install git"
 
-After yoou bring up VSCode, you will need to install the following extentions (click the "building blocks" ono the left menu). All of these extensions are from Microsoft:
+To get started, pull down the repository for creating the development environment:
+git clone https://github.com/cleester/cxx_prog_env.git
+
+Next, bring up VSCode. After yoou bring up VSCode, you will need to install the following extentions (click the "building blocks" ono the left menu). All of these extensions are from Microsoft:
 
 * Dev Containers
 * Docker
 
-If you do not have Docker app (or equivalent) installed, you can have the Docker extension install it for you by opening the Command Palette (Ctrl-Shift-P (Windoows) or Command-Shift-P (Mac)) and selecting "Dev Containers: Install Docker". Another simple alternative is to install Rancher Desktop (https://rancherdesktop.io)
+If you do not have a Docker app (or equivalent) installed, you can have the Docker extension install it for you by opening the Command Palette (Ctrl-Shift-P (Windoows) or Command-Shift-P (Mac)) and selecting "Dev Containers: Install Docker". Another simple alternative is to install Rancher Desktop (https://rancherdesktop.io)
 
-In VSCode, open the cxx_prog_env folder. You should be prompted to reopen in a container.
+In VSCode, open the cxx_prog_env folder. You should be prompted to reopen in a container. This will take a little time, as it needs to pull oown the image and create the container (For now, it will also pull down the exercises repo). When the container starts, you will be prompted to scan for the compiler. Have it scan the whole computer.
 
-Once this setup is complete, clone this repo locally to your system:
+Next, bring up the Command Palette (see above) and run "CMake: Configure", YOu will be prompted for the compiler to use. Select Clang 19.1.7 for RedHat. When that completes, you should be able to run "CMake: Build", which will build the "exercises" executable in the "build" directory. You can run this executable in the VSCode terminal to see the results. You should run this build anytime you make changes and want to see the results.
 
-git clone git@github.com:cleester/cxx_prog_env.git
+To debug the code, do the following steps:
+* Set breakpoints in the code by clicking to the left of the line number.
+* Click on the debug icon on the left toolbar.
+* Click on the green arrow to start the debugger.
+* Use the controls that appear to control the debugger. 
+
 
