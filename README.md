@@ -14,6 +14,7 @@ VSCode can be downloaded from https://code.visualstudio.com/download. If you do 
   * In a terminal, type the following: "brew install git"
 
 To get started, pull down the repository for creating the development environment:
+
 git clone https://github.com/cleester/cxx_prog_env.git
 
 Next, bring up VSCode. After yoou bring up VSCode, you will need to install the following extentions (click the "building blocks" ono the left menu). All of these extensions are from Microsoft:
