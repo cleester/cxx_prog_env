@@ -1,5 +1,5 @@
 {
-    "cmake.sourceDirectory": "/workspace/exercises",
+    "cmake.sourceDirectory": "/workspace/MockGraphFramework",
     "files.associations": {
         "array": "cpp",
         "atomic": "cpp",

@@ -1,10 +1,10 @@
 {
     "configurations": [
     {
-        "name": "(gdb) exercises",
+        "name": "(gdb) Framework",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/build/exercises",
+        "program": "${workspaceFolder}/build/app",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
