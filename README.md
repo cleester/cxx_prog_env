@@ -2,25 +2,49 @@
 
 A C++ programming environment using a Rocky 8-based container
 
-## Steps for Personal Computers
 To run this environment, you need to have three things installed locally on your computer:
 
 * Microsoft VSCode
 * Some version of Docker application
 * Git
 
-VSCode can be downloaded from https://code.visualstudio.com/download. If you do not have git installed, do the following:
+If you have a Windows-based system, you will have to have WSL installed. If you do not have it installed, do the following steps:
+* Open Powershell in administrator mode
+* type: wsl --install
+This should install WSL and install Ubuntu Linux
+
+VSCode can be downloaded from https://code.visualstudio.com/download. If you are running the Ubuntu on Windows, download the x64 version of the .deb file. To install it, do the following steps:
+* Open a terminal
+* Change to the directory containing the .deb file
+* type: sudo dpkg -i <filename>.deb, where <filename> is the name of the downloaded file.
+* If there are dependency problems, run "sudo apt install -f" to resolve them.
+
+Check and see if you have "git" installed by typing "git --version" in your terminal. If you do not have git installed, do the following:
 * Mac
   * Open up a terminal and enter the "git" command. If you do not have "git", You will be prompted to install the XCode command line tools (CLT). Go through the install process. When it is finished the "git" command should be available.
+* Windows (Ubuntu)
+  * sudo apt update
+  * sudo apt install git -y
+  * git --version
+
+Next, change directory to the desired location in your terminal and pull down the repository for creating the development environment:
+
+git clone https://github.com/cleester/cxx_prog_env.git
 
 Next, bring up VSCode. After yoou bring up VSCode, you will need to install the "dev containers" extention (click the "building blocks" ono the left menu). This extension is from Microsoft.
 
-If you do not have a Docker-based application installed, please install Rancher Desktop (https://rancherdesktop.io), selecting your system from their web page. 
-
-## Steps for All Computers
-To get started, change directory to the desired location in your terminal and pull down the repository for creating the development environment:
-
-git clone https://github.com/cleester/cxx_prog_env.git
+If you do not have a Docker-based application installed, do one of the following:
+* Mac
+  * please install Rancher Desktop (https://rancherdesktop.io), selecting Mac version for your processor.
+* Windows (Ubuntu)
+  * sudo apt update
+  * sudo apt install apt-transport-https ca-certificates curl software-properties-common
+  * curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  * echo "deb [arch=\$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  * sudo apt update
+  * sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  * sudo usermod -aG docker $USER 
+  * You will need to log out and log back in for this change to take effect. When you log back in, run "docker run hello-world" to test that docker is installed and running correctly.
 
 Make sure your Docker-based application is started and fully initialized before going to the next step.
 
