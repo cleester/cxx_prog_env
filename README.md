@@ -27,12 +27,7 @@ Next, change directory to the desired location in your terminal (Ubuntu terminal
 
 git clone https://github.com/cleester/cxx_prog_env.git
 
-Next, bring up VSCode. After you bring up VSCode, you will need to install the some extensions (click the "building blocks" ono the left menu). These extensions are from Microsoft.
-* Mac
-  * Dev Containers
-* Windows
-  * WSL
-  * Remote Development
+Next, bring up VSCode. After you bring up VSCode, you will need to install the "Remote Development" extension (click the "building blocks" on the left menu). This extension is from Microsoft.
 
 If you do not have a Docker-based application installed, do one of the following:
 * Mac
