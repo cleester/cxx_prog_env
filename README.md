@@ -10,7 +10,7 @@ To run this environment, you need to have three things installed locally on your
 
 If you have a Windows-based system, you will have to have WSL installed. If you do not have it installed, do the following steps:
 * Open Powershell in administrator mode
-* type: wsl --install
+* type: wsl --install Ubuntu
 * After this is done, type the following to switch to WSL2: wsl --set-default-version 2
 
 VSCode can be downloaded from https://code.visualstudio.com/download. Download the appropriate version for your platform.
