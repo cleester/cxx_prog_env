@@ -52,7 +52,7 @@ Start VSCode.
 
 For Windows, click on the "Remote Explorer" icon on the left (looks like a monitor). At the combo box at the top of the left pane, select "WSL targets". Then, click on the arrow next to Ubuntu. Wait for the server initialization.
 
-Click on the Explorer icon on the left toolbar. Click on the "Open Folder" button and navigate to the cxx_prog_env folder and select it. You should be prompted to reopen in a container. This will take a little time, as it needs to pull down the image and create the container (For now, it will also pull down the MockGraphFramework repo). When the container starts, you will be prompted to scan for the compiler. Have it scan the whole computer.
+Click on the Explorer icon on the left toolbar. Click on the "Open Folder" button and navigate to the cxx_prog_env folder and select it. You should be prompted to reopen in a container. This will take a little time, as it needs to pull down the image and create the container (For now, it will also pull down the MockGraphFramework repo).
 
 Next, bring up the Command Palette in VSCode (Ctrl-shift-P (Windows) or Command-shift-P (Mac)) and run "CMake: Configure", You will be prompted for the compiler to use. Have it scan the whole computer. Run "CMake: Configure" again and Select Clang 19.1.7 for RedHat. When that completes, bring up the Command Palette and run "CMake: Build", which will build the "app" executable in the "build" directory. You can run this executable by selecting "Run" ==> "Run without debugging" in the menu to see the results. You should run "CMake: Build" anytime you make changes and want to see the results.
 
