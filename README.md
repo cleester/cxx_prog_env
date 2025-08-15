@@ -18,7 +18,7 @@ VSCode can be downloaded from https://code.visualstudio.com/download. Download t
 Check and see if you have "git" installed by typing "git --version" in your terminal (Ubuntu terminal for Windows users). If you do not have git installed, do the following:
 * Mac
   * Open up a terminal and enter the "git" command. If you do not have "git", You will be prompted to install the XCode command line tools (CLT). Go through the install process. When it is finished the "git" command should be available.
-* Windows (Ubuntu)
+* Windows (Ubuntu) -- git should be availble already in Ubuntu. Run "git --version" in the Ubuntu shell. If it fails, do the following in that shell:
   * sudo apt update
   * sudo apt install git -y
   * git --version
@@ -27,7 +27,7 @@ Next, change directory to the desired location in your terminal (Ubuntu terminal
 
 git clone https://github.com/cleester/cxx_prog_env.git
 
-Next, bring up VSCode. After yoou bring up VSCode, you will need to install the some extentions (click the "building blocks" ono the left menu). These extensions are from Microsoft.
+Next, bring up VSCode. After you bring up VSCode, you will need to install the some extensions (click the "building blocks" ono the left menu). These extensions are from Microsoft.
 * Mac
   * Dev Containers
 * Windows
@@ -57,7 +57,7 @@ In VSCode, open the cxx_prog_env folder.
 * To do this in Windows (Ubuntu), click on the "Remote Explorer" icon on the left (looks like a monitor). At the combo box at the top of the pane, select "Ubuntu" and navigate to the folder. 
 You should be prompted to reopen in a container. This will take a little time, as it needs to pull down the image and create the container (For now, it will also pull down the exercises repo). When the container starts, you will be prompted to scan for the compiler. Have it scan the whole computer.
 
-Next, bring up the Command Palette (see above) and run "CMake: Configure", You will be prompted for the compiler to use. Have it scan the whole computer. Run "CMake: Configure" again and Select Clang 19.1.7 for RedHat. When that completes, bring up the Command Palette and run "CMake: Build", which will build the "app" executable in the "build" directory. You can run this executable by selecting "Run" ==> "Run without debugging" in the menu to see the results. You should run "CMake: Build" anytime you make changes and want to see the results.
+Next, bring up the Command Palette in VSCode (Ctrl-shift-P (Windows) or Command-shift-P (Mac)) and run "CMake: Configure", You will be prompted for the compiler to use. Have it scan the whole computer. Run "CMake: Configure" again and Select Clang 19.1.7 for RedHat. When that completes, bring up the Command Palette and run "CMake: Build", which will build the "app" executable in the "build" directory. You can run this executable by selecting "Run" ==> "Run without debugging" in the menu to see the results. You should run "CMake: Build" anytime you make changes and want to see the results.
 
 To debug the code, set breakpoints in the code and select "Run" ==> "Start Debugging" from the menu. Use the controls that appear to control the debugger. 
 
