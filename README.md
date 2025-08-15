@@ -57,7 +57,7 @@ In VSCode, open the cxx_prog_env folder.
 * To do this in Windows (Ubuntu), click on the "Remote Explorer" icon on the left (looks like a monitor). At the combo box at the top of the pane, select "Ubuntu" and navigate to the folder. 
 You should be prompted to reopen in a container. This will take a little time, as it needs to pull down the image and create the container (For now, it will also pull down the exercises repo). When the container starts, you will be prompted to scan for the compiler. Have it scan the whole computer.
 
-Next, bring up the Command Palette (see above) and run "CMake: Configure", You will be prompted for the compiler to use. Run "CMake: Configure" again and Select Clang 19.1.7 for RedHat. When that completes, bring up the Command Palette and run "CMake: Build", which will build the "app" executable in the "build" directory. You can run this executable by selecting "Run" ==> "Run without debugging" in the menu to see the results. You should run "CMake: Build" anytime you make changes and want to see the results.
+Next, bring up the Command Palette (see above) and run "CMake: Configure", You will be prompted for the compiler to use. Have it scan the whole computer. Run "CMake: Configure" again and Select Clang 19.1.7 for RedHat. When that completes, bring up the Command Palette and run "CMake: Build", which will build the "app" executable in the "build" directory. You can run this executable by selecting "Run" ==> "Run without debugging" in the menu to see the results. You should run "CMake: Build" anytime you make changes and want to see the results.
 
 To debug the code, set breakpoints in the code and select "Run" ==> "Start Debugging" from the menu. Use the controls that appear to control the debugger. 
 
