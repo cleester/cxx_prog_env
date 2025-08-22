@@ -12,7 +12,7 @@
     "ms-vscode.cpptools-extension-pack",
     "ms-vscode.git",
     "ms-vscode.makefile-tools",
-    "mermaidchart.vscode-mermaid-chart
+    "mermaidchart.vscode-mermaid-chart"
   ],
   "postCreateCommand": "echo 'Dev container is ready!'",
   "remoteUser": "root",
