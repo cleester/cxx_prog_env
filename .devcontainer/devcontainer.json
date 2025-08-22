@@ -12,6 +12,7 @@
     "ms-vscode.cpptools-extension-pack",
     "ms-vscode.git",
     "ms-vscode.makefile-tools",
+    "vadimcn.vscode-lldb",
     "mermaidchart.vscode-mermaid-chart"
   ],
   "postCreateCommand": "echo 'Dev container is ready!'",
